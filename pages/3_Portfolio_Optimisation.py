@@ -1,3 +1,4 @@
+from utils import show_footer
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -370,3 +371,5 @@ with st.expander("📋 Interview Talking Points — what this page demonstrates"
     - Optimisation tends to concentrate weights in a few assets — real portfolios add turnover and
       concentration constraints.
     """)
+
+show_footer()

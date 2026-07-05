@@ -1,3 +1,4 @@
+from utils import show_footer
 """
 Page 4: Risk Analytics
 ======================
@@ -715,3 +716,5 @@ with st.expander("💼 Interview talking points for S&T and Risk roles"):
         measure and the correct basis for capital allocation under FRTB.
         """
     )
+
+show_footer()

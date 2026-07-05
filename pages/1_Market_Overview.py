@@ -1,3 +1,4 @@
+from utils import show_footer
 import streamlit as st
 import yfinance as yf
 
@@ -144,3 +145,5 @@ if not chart_df.empty:
     st.plotly_chart(fig, use_container_width=True)
 else:
     st.warning("Chart data unavailable.")
+
+show_footer()

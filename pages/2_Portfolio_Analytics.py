@@ -1,3 +1,4 @@
+from utils import show_footer
 import streamlit as st
 import yfinance as yf
 import pandas as pd
@@ -219,3 +220,5 @@ if st.button("Analyse Portfolio", type="primary"):
 
     fig_corr.update_layout(height=450)
     st.plotly_chart(fig_corr, use_container_width=True)
+
+show_footer()

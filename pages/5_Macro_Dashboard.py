@@ -1,3 +1,4 @@
+from utils import show_footer
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -18,7 +19,7 @@ st.write(
 # If it's not found, it returns None instead of crashing — 
 # we check for that and show a friendly error.
 
-api_key = os.environ.get("FRED_API_KEY")
+api_key = os.environ.get("FRED_API_KEY") or st.secrets.get("FRED_API_KEY")
 
 if not api_key:
     st.error(
@@ -264,3 +265,5 @@ st.markdown(regime)
 st.caption(
     f"CPI: {cpi_level} · Fed Funds: {fed_level} · Unemployment: {unemp_level} · GDP: {gdp_level}"
 )
+
+show_footer()

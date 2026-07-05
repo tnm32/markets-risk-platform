@@ -1,3 +1,4 @@
+from utils import show_footer
 import streamlit as st
 import numpy as np
 from scipy.stats import norm
