@@ -16,5 +16,7 @@ with st.expander("ℹ️ About this project"):
         "all rights reserved, not licensed for reuse or redistribution."
     )
 
+st.info("This platform is for educational/demonstration purposes only and does not constitute financial advice.")
+
 st.divider()
 st.caption("© 2026 Toby Medley. Shared for demonstration purposes only. All rights reserved.")
