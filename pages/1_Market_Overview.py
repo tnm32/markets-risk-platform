@@ -1,4 +1,3 @@
-from utils import show_footer
 import streamlit as st
 import yfinance as yf
 
@@ -146,4 +145,5 @@ if not chart_df.empty:
 else:
     st.warning("Chart data unavailable.")
 
-show_footer()
+st.divider()
+st.caption("© 2026 Toby Medley. Shared for demonstration purposes only. All rights reserved.")

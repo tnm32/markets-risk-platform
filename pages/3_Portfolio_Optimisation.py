@@ -1,4 +1,3 @@
-from utils import show_footer
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -372,4 +371,5 @@ with st.expander("📋 Interview Talking Points — what this page demonstrates"
       concentration constraints.
     """)
 
-show_footer()
+st.divider()
+st.caption("© 2026 Toby Medley. Shared for demonstration purposes only. All rights reserved.")

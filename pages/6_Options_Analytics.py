@@ -1,4 +1,3 @@
-from utils import show_footer
 import streamlit as st
 import numpy as np
 from scipy.stats import norm
@@ -256,3 +255,6 @@ fig_payoff.update_layout(
 )
 
 st.plotly_chart(fig_payoff, use_container_width=True)
+
+st.divider()
+st.caption("© 2026 Toby Medley. Shared for demonstration purposes only. All rights reserved.")

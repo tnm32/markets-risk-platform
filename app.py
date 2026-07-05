@@ -17,4 +17,4 @@ with st.expander("ℹ️ About this project"):
     )
 
 st.divider()
-st.caption("© 2026 Toby [surname]. Shared for demonstration purposes only. All rights reserved.")
+st.caption("© 2026 Toby Medley. Shared for demonstration purposes only. All rights reserved.")

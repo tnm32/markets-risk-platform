@@ -1,4 +1,3 @@
-from utils import show_footer
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -266,4 +265,5 @@ st.caption(
     f"CPI: {cpi_level} · Fed Funds: {fed_level} · Unemployment: {unemp_level} · GDP: {gdp_level}"
 )
 
-show_footer()
+st.divider()
+st.caption("© 2026 Toby Medley. Shared for demonstration purposes only. All rights reserved.")

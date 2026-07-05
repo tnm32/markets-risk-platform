@@ -1,4 +1,3 @@
-from utils import show_footer
 """
 Page 4: Risk Analytics
 ======================
@@ -717,4 +716,5 @@ with st.expander("💼 Interview talking points for S&T and Risk roles"):
         """
     )
 
-show_footer()
+st.divider()
+st.caption("© 2026 Toby Medley. Shared for demonstration purposes only. All rights reserved.")
