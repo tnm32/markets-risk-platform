@@ -1,0 +1,21 @@
+name: Keep Streamlit App Awake
+
+on:
+  schedule:
+    # Runs every 10 hours (well inside the 12-hour limit)
+    - cron: '0 */10 * * *'
+  workflow_dispatch: # Allows you to trigger it manually if needed
+
+jobs:
+  keep_awake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Make Empty Commit
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git commit --allow-empty -m "ping: keeping streamlit app awake"
+          git push
